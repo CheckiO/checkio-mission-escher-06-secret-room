@@ -1,0 +1,18 @@
+"use strict";
+
+function secretRoom(number) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(secretRoom(5))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(secretRoom(5), 1) //five, four, one, three, two
+    assert.equal(secretRoom(3), 2) //one, three, two
+    assert.equal(secretRoom(1000), 551)
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}

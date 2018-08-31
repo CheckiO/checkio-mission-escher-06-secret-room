@@ -1,0 +1,60 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}secret_door.png" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+Here you are in the castle. Despite the fact that it’s already about 200 years old, it doesn’t look like an ancient ruin at all. In the great hall (of a very odd geometrical form) you’re seeing the following:
+- a beautiful spiral staircase leading to the 2nd floor;
+- an equally attractive staircase that leads into the dungeon;
+- a lot of doors of a wide variety of different shapes, colors and designs.
+Having decided to explore the doors on this floor first, you’ve assumed that the most interesting things should be in the very last room. However, finding it won’t be as easy as it seems.<br>
+<br>
+Before going on this trip, you’ve gathered some information about the Lord Escher's quirks. One of them was a very unusual numbering of doors - he numbered them according to how the numbers go in the alphabetical order. For example, if there were five doors positioned from left to right, they were numbered as: five, four, one, three, two (instead of a completely logical numeration - 1, 2, 3, 4, 5). Thus, the very last door was actually the leftmost, not the very right one, as it might be assumed. Your task is to find the very last door.
+</div>
+
+<p>
+As input your function will receive an integer - the total number of doors in the current room. You will need to sort the door numbers in the order in which these numbers, expressed in words, go in the alphabetical order. And then return the position number of the last door (the door with the highest number). The count starts from the 1st position (not from the 0th). The maximum number of doors is 1000. The numbers after 100 are written in the format like - 'one hundred twenty nine'.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> the door number.
+</p>
+
+<p>
+    <strong>Output: </strong> the 'right' door number.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+secretRoom(5) == 1, #five, four, one, three, two
+secretRoom(3) == 2, #one, three, two
+secretRoom(1000) == 551
+</pre>
+{% else %}
+<pre class="brush: python">
+secret_room(5) == 1, #five, four, one, three, two
+secret_room(3) == 2, #one, three, two
+secret_room(1000) == 551
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For the work with numbers in their alphabetical representation.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    2 <= amount of the doors <= 1000
+</p>
