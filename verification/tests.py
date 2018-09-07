@@ -39,6 +39,46 @@ TESTS = {
         {
             "input": 88,
             "answer": 4
+        },
+        {
+            "input": 19,
+            "answer": 9
+        },
+        {
+            "input": 77,
+            "answer": 37
+        },
+        {
+            "input": 114,
+            "answer": 56
+        },
+        {
+            "input": 753,
+            "answer": 359
+        },
+        {
+            "input": 299,
+            "answer": 244
+        },
+        {
+            "input": 901,
+            "answer": 340
+        },
+        {
+            "input": 516,
+            "answer": 37
+        },
+        {
+            "input": 410,
+            "answer": 45
+        },
+        {
+            "input": 818,
+            "answer": 4
+        },
+        {
+            "input": 9,
+            "answer": 4
         }
 
     ]
