@@ -1,0 +1,59 @@
+
+<body data-author="likewind">
+<div class="question-answer">
+    <div class="question">
+        I don’t know how to start solving.
+    </div>
+    <div class="answer">
+        First of all, you need to convert each number between 1 and the number of the last room in its textual correspondence and put it on the list.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+         How do I match numbers and their corresponding words/phrases?
+    </div>
+    <div class="answer">
+You can create a dictionary where the numbers (from 1 to 9, then 10-19, then 20, 30, ..., 90) will be the keys, and their corresponding values will be the words equivalent to these numbers.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        What do I do now when the dictionary is ready?
+    </div>
+    <div class="answer">
+You need to break the number down to its component parts: the hundreds, dozens, units. And compare the obtained values ​​with the keys in the dictionary that you’ve created earlier.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+         I’ve managed to find matches. What's next?
+    </div>
+    <div class="answer">
+Now you only need to merge all received strings into one. For example, the number 254 can be broken down to 200, 50 and 4. They correspond to the strings: "two hundred", "fifty", "four", which make up the text equivalent of the number - "two hundred fifty four".
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        But this operation must be performed with each number, right? 
+    </div>
+    <div class="answer">
+Yes. As has been said before, as soon as you understand the principle, you need to convert each number in the range from 1 to the number of the last room into its textual correspondence and put it on the list.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        So, I have a list of strings. What should I do with it?
+    </div>
+    <div class="answer">
+Now you need to take 3 actions. First, put in a separate variable a string that is the last element of the list (the last room number written in words). Second, sort the list of strings. And, finally, find in the sorted list the index of the string that you’ve put into a separate variable. Also, don’t forget to add 1 to the resulting value, since the room numbers start with 1, and
+the indexes in the list start with 0.
+   </div>
+</div>
+
+</body>
+
