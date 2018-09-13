@@ -79,6 +79,26 @@ TESTS = {
         {
             "input": 9,
             "answer": 4
+        },
+        {
+            "input": 1,
+            "answer": 1
+        },
+        {
+            "input": 2,
+            "answer": 2
+        },
+        {
+            "input": 200,
+            "answer": 200
+        },
+        {
+            "input": 201,
+            "answer": 201
+        },
+        {
+            "input": 202,
+            "answer": 202
         }
 
     ]
