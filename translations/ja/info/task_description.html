@@ -1,0 +1,76 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}secret_door.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+あなたは城内にいます。
+すでに 200年余り経ったにもかかわらず、全く古代の遺跡のようには見えません。
+大変奇妙な幾何学的形状の立派なホールで以下のものを見つけました:
+2階への美しいらせん階段、同様に魅力的な地下牢への階段、
+様々な形状や色彩とデザインを持つ多数のドア。
+手始めにドアを調べることに決めたあなたは最も興味深い品物は一番最後の部屋にあると考えてそれを探しましたが思うほど容易ではありませんでした。<br>
+<br>
+あなたはこの探索を続ける前にエッシャー卿の癖についていくらか情報を集めることにしました。
+それらの一つに非常に変わったドアの番号の振り方がありました。
+彼は数字がアルファベットで表示される際の順番に従って番号を振ったのです。
+例えばもし 5つのドアが左から右にあったなら、それらには順に five, four, one, three, two ( 論理的な数値の順番 1, 2, 3, 4, 5 の代わりに ) と振られます。
+このように一番最後の部屋は実際には最も左側になります。
+あなたの仕事は最後の部屋を見つけることです。
+</div>
+
+<p>
+1つの整数が入力値です。
+これはこの部屋のドアの総数です。
+あなたはアルファベットで表された数字の順に従ってドアの番号を並べ替える必要があります。
+そして最後のドアの位置を返して下さい。( 最も大きい数字が振られています )
+ドアは 1から順に数えます。 ( 0 ではありません )
+ドアの最大値は 1000 です。
+100 以降の数字は 'one hundred twenty nine' のような形式で表します。
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}doors.jpg" style="max-height: 200px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> ドアの数
+</p>
+
+<p>
+    <strong>出力: </strong> 正しい ( the 'right' ) 最後のドアの位置
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>例:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+secretRoom(5) == 1, #five, four, one, three, two
+secretRoom(3) == 2, #one, three, two
+secretRoom(1000) == 551
+</pre>
+{% else %}
+<pre class="brush: python">
+secret_room(5) == 1, #five, four, one, three, two
+secret_room(3) == 2, #one, three, two
+secret_room(1000) == 551
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    アルファベットで表示された数字の扱い方を学べます
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>事前条件</strong>:<br>
+    2 <= amount of the doors <= 1000
+</p>
